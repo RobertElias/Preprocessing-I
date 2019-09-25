@@ -146,20 +146,22 @@ body {
     font-family: 'Roboto', sans-serif;
     background: whitesmoke;
 }
-
+/* Variables */ 
 @backgroundSilver: silver;
+@font-size: 1.5em;
 
 .container {
     border: 3px solid green;
     width: 1680px;
     height: 900px;
     margin: 5px auto;
-}
+
 h1 {
-	font-size: 1.5em;
+	font-size: @font-size;
 	font-family: 'Roboto', sans-serif;
 	
 }
+
 .navigation {
     width: 1680px;
     height: 40px;
@@ -168,12 +170,13 @@ h1 {
     justify-content: space-around;
     text-align: right;
 }
+
 .navigation a{
     display: inline-block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;  
-    font-size: 1.5em;
+    font-size: @font-size;
 }
 
 .intro {
@@ -194,7 +197,6 @@ h1 {
     width: 200px;
     height: 210px;
 }
-
 
 .form {
 	border: 1px solid red;
@@ -225,3 +227,12 @@ table {
   tr:nth-child(even) {
 	background-color: #dddddd;
   }
+}
+
+
+
+
+
+
+
+

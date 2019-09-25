@@ -136,17 +136,18 @@ body {
   font-family: 'Roboto', sans-serif;
   background: whitesmoke;
 }
+/* Variables */
 .container {
   border: 3px solid green;
   width: 1680px;
   height: 900px;
   margin: 5px auto;
 }
-h1 {
+.container h1 {
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
 }
-.navigation {
+.container .navigation {
   width: 1680px;
   height: 40px;
   margin: 10px auto 10px;
@@ -154,50 +155,50 @@ h1 {
   justify-content: space-around;
   text-align: right;
 }
-.navigation a {
+.container .navigation a {
   display: inline-block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 1.5em;
 }
-.intro {
+.container .intro {
   border: 1px solid blue;
   width: 1680px;
   height: 330px;
   margin: 5px auto;
 }
-.intro {
+.container .intro {
   background-color: silver;
 }
-.image {
+.container .image {
   display: block;
   width: 200px;
   height: 210px;
 }
-.form {
+.container .form {
   border: 1px solid red;
   width: 1680px;
   height: 325px;
   margin: 20px auto;
 }
-footer {
+.container footer {
   text-align: center;
   width: 1680px;
   height: 40px;
   margin: 50px auto;
 }
-table {
+.container table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-td,
-th {
+.container td,
+.container th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-tr:nth-child(even) {
+.container tr:nth-child(even) {
   background-color: #dddddd;
 }
