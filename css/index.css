@@ -148,9 +148,18 @@ h1 {
 }
 .navigation {
   width: 1680px;
-  height: 25px;
-  margin: 10px auto;
+  height: 40px;
+  margin: 10px auto 10px;
   border: 2px solid red;
+  justify-content: space-around;
+  text-align: right;
+}
+.navigation a {
+  display: inline-block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 .intro {
   border: 1px solid blue;
@@ -169,8 +178,8 @@ h1 {
 .form {
   border: 1px solid red;
   width: 1680px;
-  height: 300px;
-  margin: 170px auto;
+  height: 325px;
+  margin: 20px auto;
 }
 footer {
   text-align: center;
