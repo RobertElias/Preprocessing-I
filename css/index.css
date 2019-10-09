@@ -133,6 +133,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+}
 /* Variables */
 /* Set every element's box-sizing to border-box */
 * {
@@ -141,7 +148,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background: #2a4b7c;
 }
 .container {
@@ -152,7 +159,7 @@ body {
 }
 .container h1 {
   font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', monospace;
 }
 .container .navigation {
   width: 100%;
@@ -188,7 +195,6 @@ body {
   height: 210px;
 }
 .container .form {
-  border: 1px solid red;
   width: 880px;
   height: 340px;
   margin: 20px auto;

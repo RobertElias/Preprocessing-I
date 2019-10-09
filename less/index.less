@@ -137,10 +137,16 @@ table {
 }
 
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
 /* Variables */ 
 @body-color: #2a4b7c;
 @backgroundSilver: #cececa;
 @font-size: 1.5em;
+
+@main-font: 'Roboto Mono', monospace;
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -150,7 +156,7 @@ table {
 html,
 body {
 	height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: @main-font;
     background: @body-color;
 }
 
@@ -165,7 +171,7 @@ body {
 
 h1 {
 	font-size: @font-size;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', monospace;
 	
 }
 
@@ -209,7 +215,7 @@ h1 {
 }
 
 .form {
-	border: 1px solid red;
+	// border: 1px solid red;
 	width: 880px;
     height: 340px;
     margin: 20px auto;
