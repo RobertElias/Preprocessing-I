@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 @font-face {
   font-family: 'Roboto';
@@ -159,9 +159,10 @@ body {
 }
 @media (max-width: 500px) {
   .container {
+    width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 }
 .container h1 {
@@ -169,6 +170,7 @@ body {
   font-family: 'Roboto', monospace;
 }
 .container .navigation {
+  border: 2px solid red;
   border-bottom: 1px solid black;
   margin: 10px 0;
   padding: 10px 0;
@@ -176,7 +178,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .container .navigation {
     flex-direction: column;
     align-items: center;
@@ -191,13 +193,11 @@ body {
   }
 }
 .container .navigation nav {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   margin-left: 62px;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .container .navigation nav {
+    width: 500px;
     margin-left: 0;
   }
 }
@@ -216,6 +216,7 @@ body {
 }
 @media (max-width: 500px) {
   .container .intro {
+    width: 500px;
     flex-direction: column;
     align-items: center;
   }
@@ -229,6 +230,7 @@ body {
   .container .skills,
   .container .work,
   .container .contact {
+    width: 500px;
     flex-direction: column;
     align-items: center;
   }
@@ -245,8 +247,12 @@ body {
 }
 @media (max-width: 500px) {
   .container .form {
+    font-size: 1rem;
+    width: 500px;
+    display: flex;
+    align-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 }
 .container footer {
@@ -262,12 +268,17 @@ body {
 }
 @media (max-width: 500px) {
   .container footer {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
     align-items: center;
+    align-content: left;
   }
 }
 .container table {
-  font-family: arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   border-collapse: collapse;
   width: 100%;
 }
