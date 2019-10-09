@@ -133,6 +133,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Variables */
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -141,12 +142,12 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background: whitesmoke;
+  background: #2a4b7c;
 }
-/* Variables */
 .container {
+  background-color: #cececa;
   width: 880px;
-  height: 1050px;
+  height: 1825px;
   margin: 5px auto;
 }
 .container h1 {
@@ -174,7 +175,12 @@ body {
   margin: 5px auto;
 }
 .container .intro {
-  background-color: silver;
+  background-color: #cececa;
+}
+.container .skills,
+.container .work,
+.container .contact {
+  background-color: #cececa;
 }
 .container .image {
   display: block;
@@ -184,12 +190,13 @@ body {
 .container .form {
   border: 1px solid red;
   width: 880px;
-  height: 325px;
+  height: 340px;
   margin: 20px auto;
 }
 .container footer {
-  justify-content: flex;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 880px;
   height: 50px;
