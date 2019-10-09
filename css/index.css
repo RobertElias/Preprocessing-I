@@ -157,47 +157,97 @@ body {
   height: 1825px;
   margin: 5px auto;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container h1 {
   font-size: 1.5em;
   font-family: 'Roboto', monospace;
 }
 .container .navigation {
-  width: 100%;
-  height: 50px;
-  margin: 10px auto 10px;
-  background: #000;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
-  text-align: right;
 }
-.container .navigation a {
+@media (max-width: 515px) {
+  .container .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .navigation h1 {
+  font-size: 1.2rem;
+}
+@media (max-width: 515px) {
+  .container .navigation h1 {
+    margin-bottom: 20px;
+  }
+}
+.container .navigation nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 62px;
+}
+@media (max-width: 515px) {
+  .container .navigation nav {
+    margin-left: 0;
+  }
+}
+.container .navigation nav a {
+  margin-left: 20px;
+  font-size: 1rem;
   display: inline-block;
   color: #ffffff;
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 1.5em;
 }
 .container .intro {
   width: 880px;
   height: 400px;
   margin: 5px auto;
 }
-.container .intro {
-  background-color: #cececa;
+@media (max-width: 500px) {
+  .container .intro {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .skills,
 .container .work,
 .container .contact {
   background-color: #cececa;
 }
+@media (max-width: 500px) {
+  .container .skills,
+  .container .work,
+  .container .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container .image {
-  display: block;
+  display: flex;
   width: 200px;
-  height: 210px;
+  height: 220px;
 }
 .container .form {
   width: 880px;
   height: 340px;
   margin: 20px auto;
+}
+@media (max-width: 500px) {
+  .container .form {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container footer {
   display: flex;
@@ -209,6 +259,12 @@ body {
   margin: 50px auto;
   color: white;
   background-color: #000;
+}
+@media (max-width: 500px) {
+  .container footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container table {
   font-family: arial, sans-serif;

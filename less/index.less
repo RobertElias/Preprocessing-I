@@ -148,6 +148,18 @@ table {
 
 @main-font: 'Roboto Mono', monospace;
 
+.bordered() {
+    border: dotted 3px orange;
+    margin: 2%;
+    padding: 2%;
+    // border-bottom: solid 2px black;
+  }
+  .centre(){
+    display:flex;
+    justify-content:center;
+    align-content: center;
+  }
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -168,6 +180,11 @@ body {
     width: 880px;
     height: 1825px;
     margin: 5px auto;
+    @media( max-width: 500px ) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      } 
 
 h1 {
 	font-size: @font-size;
@@ -175,43 +192,99 @@ h1 {
 	
 }
 
-.navigation {
-    width: 100%;
-    height: 50px;
-    margin: 10px auto 10px;
-    background: #000;
-    // border: 2px solid red;
-    justify-content: space-around;
-    text-align: right;
-}
+// .navigation {
+//   border-bottom: 2px solid black;
+//   margin: 20px 0;
+//   padding: 20px 0;
+//   display: flex;
+//   justify-content: space-between;
+//   align-content: center;
+//   align-items: center;
 
-.navigation a{
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    padding: 8px 16px;
-    text-decoration: none;  
-    font-size: @font-size;
-}
+//   @media( max-width: 500px ) {
+//     flex-direction: column;
+//     align-items: center;
+//   } 
+//   h1 {
+//     font-size: 1.5rem;
+//     align-content: center;
+//     color: @body-color;
+
+//     @media( max-width: 500px ) {
+//       margin-bottom: 20px;
+//     }
+//   } 
+// }
+
+.navigation {
+    // border: 2px solid red;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    @media( max-width: 515px ) {
+      flex-direction: column;
+      align-items: center;
+    } // this closes my header media query 
+  
+    h1 {
+      font-size: 1.2rem;
+      
+  
+      @media( max-width: 515px ) {
+        margin-bottom: 20px;
+      }// this closes the media query 
+    } // this closes the h1
+  
+    nav {
+      .centre();
+      margin-left: 62px;
+      
+      @media( max-width: 515px ) {
+        margin-left: 0;
+      }// this closes the media query
+     a {
+        margin-left: 20px;
+        font-size: 1.0rem;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 8px 16px;
+        text-decoration: none;  
+        
+      }// this closes the links 
+    }//this closes the nav
+  }//this closes the .navvigation
+
+
 
 .intro {
     // border: 1px solid blue;
     width: 880px;
     height: 400px;
     margin: 5px auto;
+    @media( max-width: 500px ) {
+        flex-direction: column;
+        align-items: center;
+      } 
 
 }
 
-.intro {
-    background-color: @backgroundSilver;
-}
+
 .skills, .work, .contact {
     background-color: @backgroundSilver;
+    @media( max-width: 500px ) {
+        flex-direction: column;
+        align-items: center;
+      } 
 }
 .image {
     
-    display: block;
+    display: flex;
     width: 200px;
-    height: 210px;
+    height: 220px;
 }
 
 .form {
@@ -219,6 +292,10 @@ h1 {
 	width: 880px;
     height: 340px;
     margin: 20px auto;
+    @media( max-width: 500px ) {
+        flex-direction: column;
+        align-items: center;
+      } 
 }
 
 footer {
@@ -232,6 +309,10 @@ footer {
     margin: 50px auto;
     color: white;
     background-color: #000;
+    @media( max-width: 500px ) {
+        flex-direction: column;
+        align-items: center;
+      } 
 }
 table {
 	font-family: arial, sans-serif;
