@@ -305,6 +305,22 @@ body {
   height: 600px;
   border: 1px solid red;
 }
+.container .address a {
+  display: flex;
+  align-content: left;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .container .address {
+    width: 500px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: center;
+  }
+}
 .container table {
   font-family: 'Roboto Mono', monospace;
   border-collapse: collapse;
