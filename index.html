@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>My Resume Robert Elias</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
@@ -31,7 +32,6 @@
         <img
           src="https://media.licdn.com/dms/image/C5603AQHmwirTvW1hRw/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=vTW-so7YJ7nWxqB05HhNUev-PCC04TcAZYoMwQhOJ0s"
           alt="">
-
       </div>
       <h1>Full Stack Web Developer</h1>
       <br>
@@ -98,52 +98,57 @@
     <section class="contact">
       <form class="form">
         <h1>Contact</h1><br>
-        <label for="fname">First Name</label>
+        <label for="fname">First Name:</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <label for="lname">Last Name</label>
+        <label for="lname">Last Name:</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <label for="country">Country</label>
+        <label for="country">Country:</label>
         <select id="country" name="country">
-          <option value="usa">USA</option>
+          <option value="usa">USA:</option>
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
         </select>
         <br>
-        <label for="subject">Subject</label>
-        <br>
-        <textarea id="subject" name="subject" placeholder="Write something.."
-          style="height:200px; width:655px"></textarea>
+        <label for="subject">Subject:</label>
         <br><br>
-        <button>Submit</button>
+        <textarea id="subject" name="subject" placeholder="Write something.."
+          style="height:200px; width:500"></textarea>
+        <br><br>
+        <div class="btn-parent">
+          <button class="book-btn">Contact Me!</button>
+        </div>
 
       </form>
     </section>
-    <ul class="address">
-      <li class="icon solid fa-home">
-        Robert Elias<br />
-        123 Main Place<br />
-        Orange County Ca. 92675
-      </li>
-      <li class="icon solid fa-phone">(657) 221-5443</li>
-      <li class="icon solid fa-envelope"><a href="#">information@robert-elias.com</a></li>
-      <li class="icon brands fa-twitter"><a href="https://twitter.com/robert_elias">twitter.com/robert_elias</a></li>
-      <li class="icon brands fa-github"><a href="https://github.com/RobertElias">github.com/RobertElias</a></li>
-      <li class="icon brands fa-linkedin-in"><a
-          href="https://www.linkedin.com/in/robert-elias/">linkedin.com/robert-elias</a></li>
-    </ul>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <address>
+        yum@sweeteatsbakery.com<br>
+        202-555-0144<br>
+        4209 Bobcat Drive<br>
+        Madison, WI, 48219
+      </address>
+    </section>
+      <div class="address">
+        <address>
+          Robert Elias<br />
+          123 Main Place<br />
+          Orange County Ca. 92675 <br>
+          657-221-5443
+        </address>
+      
+        <i class="fas fa-envelope"><a href="#">information@robert-elias.com</a></i>
+        <li class="icon brands fa-twitter"><a href="https://twitter.com/robert_elias">twitter.com/robert_elias</a></li>
+        <li class="icon brands fa-github"><a href="https://github.com/RobertElias">github.com/RobertElias</a></li>
+        <li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/robert-elias/">linkedin.com/robert-elias</a></li>
+      </div>
+    
     <footer>
       <i class="fas fa-copyright"> &copy; www.robert-elias.com 2019</i>
     </footer>
   </section>
-
-
-
-
-
-
-
 </body>
 
 </html>
